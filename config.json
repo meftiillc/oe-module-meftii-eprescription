@@ -1,0 +1,31 @@
+{
+  "name": "MEFTii ePrescription Module",
+  "mod_name": "oe-module-mediscript",
+  "mod_directory": "oe-module-mediscript",
+  "mod_version": "1.0.0",
+  "mod_type": "custom",
+  "mod_ui_name": "MEFTii eRx",
+  "mod_relative_link": "index.php",
+  "mod_description": "Seamless Surescripts certified e-Prescription and EPCS integration for OpenEMR powered by MEFTii via SMART on FHIR.",
+  "mod_nick_name": "MEFTii",
+  "mod_author": "MEFTii Technologies",
+  "mod_license": "GPL-2.0-or-later",
+  "mod_active": 1,
+  "dependencies": [],
+  "menu_options": [
+    {
+      "label": "MEFTii ePrescription Portal",
+      "menu_location": "Modules",
+      "requirement": 0,
+      "target": "_blank",
+      "url": "interface/modules/custom_modules/oe-module-mediscript/index.php"
+    },
+    {
+      "label": "E-Prescribe (MEFTii)",
+      "menu_location": "Patient/Client",
+      "requirement": 0,
+      "target": "_blank",
+      "url": "interface/modules/custom_modules/oe-module-mediscript/index.php?context=patient"
+    }
+  ]
+}
