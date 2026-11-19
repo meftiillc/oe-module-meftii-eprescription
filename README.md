@@ -6,16 +6,18 @@ This module integrates **MEFTii ePrescription & EPCS** directly into **OpenEMR**
 
 ## 🚀 Installation Instructions (For OpenEMR Administrators)
 
-### Step 1: Copy Module to OpenEMR
-Copy the `openemr-module` directory into your OpenEMR installation under:
+### Step 1: Install Module in OpenEMR
+Clone the repository directly into your OpenEMR `custom_modules` directory:
 ```bash
-cp -r openemr-module /path/to/openemr/interface/modules/custom_modules/oe-module-mediscript
+cd /path/to/openemr/interface/modules/custom_modules/
+git clone https://github.com/meftiillc/oe-module-meftii-eprescription.git
 ```
+*(Or download and extract the release ZIP into `interface/modules/custom_modules/oe-module-meftii-eprescription`)*
 
 ### Step 2: Enable Module in OpenEMR
 1. Log in to your OpenEMR instance as an Administrator.
 2. Go to **Modules ➔ Manage Modules**.
-3. Locate **MEFTii ePrescription Module** (`oe-module-mediscript`).
+3. Locate **MEFTii ePrescription Module** (`oe-module-meftii-eprescription`).
 4. Click **[ Install ]** and then **[ Enable ]**.
 
 ### Step 3: Register API Client in OpenEMR

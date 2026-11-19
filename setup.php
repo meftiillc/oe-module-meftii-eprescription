@@ -100,7 +100,7 @@ while ($row = sqlFetchArray($res)) {
 }
 
 $webRoot = class_exists(OEGlobalsBag::class) ? OEGlobalsBag::getInstance()->getWebRoot() : ($GLOBALS['web_root'] ?? '');
-$launchUrl = $webRoot . "/interface/modules/custom_modules/oe-module-mediscript/index.php";
+$launchUrl = $webRoot . "/interface/modules/custom_modules/oe-module-meftii-eprescription/index.php";
 
 $formattedProviders = array_map(function($p) {
     return [

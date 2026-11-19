@@ -25,7 +25,7 @@ if (!function_exists('oe_module_mediscript_add_menu_item')) {
         $menuItem->menu_id = 'mod_mediscript';
         $menuItem->label = xlt("MEFTii ePrescription Portal");
         $webRoot = class_exists(OEGlobalsBag::class) ? OEGlobalsBag::getInstance()->getWebRoot() : ($GLOBALS['web_root'] ?? '');
-        $menuItem->url = $webRoot . "/interface/modules/custom_modules/oe-module-mediscript/index.php";
+        $menuItem->url = $webRoot . "/interface/modules/custom_modules/oe-module-meftii-eprescription/index.php";
         $menuItem->children = [];
         $menuItem->acl_req = ["patients", "med"];
         $menuItem->global_req = [];
@@ -35,7 +35,7 @@ if (!function_exists('oe_module_mediscript_add_menu_item')) {
         $setupItem->target = '_blank';
         $setupItem->menu_id = 'mod_mediscript_setup';
         $setupItem->label = xlt("MEFTii Clinic Setup & Doctors");
-        $setupItem->url = $webRoot . "/interface/modules/custom_modules/oe-module-mediscript/setup.php";
+        $setupItem->url = $webRoot . "/interface/modules/custom_modules/oe-module-meftii-eprescription/setup.php";
         $setupItem->children = [];
         $setupItem->acl_req = ["admin", "super"];
         $setupItem->global_req = [];
@@ -68,7 +68,7 @@ if (!function_exists('oe_module_mediscript_patient_menu_item')) {
         $menuItem = new stdClass();
         $menuItem->label = xlt("E-Prescribe (MEFTii)");
         $webRoot = class_exists(OEGlobalsBag::class) ? OEGlobalsBag::getInstance()->getWebRoot() : ($GLOBALS['web_root'] ?? '');
-        $url = $webRoot . "/interface/modules/custom_modules/oe-module-mediscript/index.php?context=patient";
+        $url = $webRoot . "/interface/modules/custom_modules/oe-module-meftii-eprescription/index.php?context=patient";
         if (!empty($pid)) {
             $url .= "&pid=" . urlencode($pid);
         }

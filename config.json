@@ -1,7 +1,7 @@
 {
   "name": "MEFTii ePrescription Module",
-  "mod_name": "oe-module-mediscript",
-  "mod_directory": "oe-module-mediscript",
+  "mod_name": "oe-module-meftii-eprescription",
+  "mod_directory": "oe-module-meftii-eprescription",
   "mod_version": "1.0.0",
   "mod_type": "custom",
   "mod_ui_name": "MEFTii eRx",
@@ -18,14 +18,14 @@
       "menu_location": "Modules",
       "requirement": 0,
       "target": "_blank",
-      "url": "interface/modules/custom_modules/oe-module-mediscript/index.php"
+      "url": "interface/modules/custom_modules/oe-module-meftii-eprescription/index.php"
     },
     {
       "label": "E-Prescribe (MEFTii)",
       "menu_location": "Patient/Client",
       "requirement": 0,
       "target": "_blank",
-      "url": "interface/modules/custom_modules/oe-module-mediscript/index.php?context=patient"
+      "url": "interface/modules/custom_modules/oe-module-meftii-eprescription/index.php?context=patient"
     }
   ]
 }
